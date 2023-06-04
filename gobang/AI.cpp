@@ -36,7 +36,7 @@ void AI::calculateScore()
 		}
 	}
 
-	//对棋局进行评估
+	//对棋局进行评估,hhhhhhh
 	int size = chess->getGradeSize();
 	bool direction;//true表示正向，false表示反向
 	int count = 0;//表示必须走完正反两个方向才能接着判断其他方向
@@ -89,7 +89,7 @@ void AI::calculateScore()
 							curCol >= 0 && curCol < size &&
 							chess->getChessData(curRow, curCol) == 0) {
 							emptyNum++;//该位置为空白位
-							break;
+						    break;
 						}
 						else {
 							break; //该位置超出棋盘范围，或者该位置是白棋
